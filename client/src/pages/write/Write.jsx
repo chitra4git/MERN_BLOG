@@ -1,29 +1,4 @@
-    // import "./write.css"
-    // import writeImg from "../write/writeimg.jpg"
-    
-    // export default function Write() {
-    //   return (
-    //     <div className="write">
-    //         <img className="writeImg"
-    //         src={writeImg}
-    //         alt=""
-    //         />
-    //         <form className="writeForm"></form>
-    //         <div className="writeFormGroup">
-    //             <lable htmlFor="fileinput">
-    //             <i className="writeIcon fa-solid fa-plus"></i>
-    //             </lable>
-    //             <input type="file" id="fileInput" style={{display:"none"}} />
-    //             <input type="text" placeholder="Title" className="writeInput" autoFocus={true} />
-    //         </div>
-    //         <div className="writeFormGroup">
-    //             <textarea placeholder="CREATE YOUR BLOG" type ="text" className="writeInput writeText"></textarea>     
-    //         </div>
-    //         <button className="writeSubmit" type="submit">Publish</button>
-    //     </div>
-    //   )
-    // }
-    
+
 import { useContext, useState } from "react";
 import "./write.css";
 import axios from "axios";
@@ -34,7 +9,7 @@ export default function Write() {
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
-  
+  // console.log(user)
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newPost = {
@@ -49,7 +24,7 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post("/upload", data);// fetching the data
       } catch (err) {}
     }
     try {

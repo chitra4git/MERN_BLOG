@@ -1,40 +1,20 @@
-// import './register.css'
-// import { Link } from "react-router-dom";
-
-
-
-// export default function register() {
-//   return (
-//     <div className='register'>
-//         <span className='registerTitle'>Register</span>
-//         <form className="registerForm">
-//             <label>Username</label>
-//             <input type="text" className='registerInput' placeholder='Enter your username..'/>
-//             <label>Email</label>
-//             <input type="text" className='registerInput' placeholder='Enter your email..'/>
-//             <label>Password</label>
-//             <input type="password"className='registerInput' placeholder='Enter your password..'/>
-//             <button className='registerButton'>Register</button>
-//         </form>
-//             <button className='registerLoginButton'>
-//             <Link className="link" to="/login">Login</Link>
-
-//             </button>
-//     </div>
-//   )
-// }
 
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./register.css";
 
+//ref link https://react-hook-form.com/api/useform/register/
 export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
 
+  //   e.preventDefault();
+  // setError(false);
+
+  //submit function
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(false);
@@ -49,6 +29,7 @@ export default function Register() {
       setError(true);
     }
   };
+  // use eventhandler
   return (
     <div className="register">
       <span className="registerTitle">Register</span>
@@ -58,6 +39,7 @@ export default function Register() {
           type="text"
           className="registerInput"
           placeholder="Enter your username..."
+          //{(e) => setUsername(e.target.value)}
           onChange={(e) => setUsername(e.target.value)}
         />
         <label>Email</label>

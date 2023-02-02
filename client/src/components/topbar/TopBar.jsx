@@ -8,7 +8,7 @@ import { Context } from "../../context/Context"
 export default function TopBar() {
     const { user, dispatch } = useContext(Context);
     const PF = "http://localhost:5000/images/";
-
+    //logout function
     const handleLogout = () =>{
         dispatch({ type: "LOGOUT" });
     };
@@ -28,6 +28,7 @@ export default function TopBar() {
                 </li>
             </ul>
         </div>
+        {/* add links to register and login */}
         <div className="topRight">
     
             {

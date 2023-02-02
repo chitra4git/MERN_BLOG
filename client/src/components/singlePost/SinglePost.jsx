@@ -7,10 +7,14 @@ import "./singlePost.css";
 
 export default function SinglePost() {
   const location = useLocation();
+  //path name in console
   const path = location.pathname.split("/")[2];
+
+  //console.log(path)
   const [post, setPost] = useState({});
   const PF = "http://localhost:5000/images/";
   const { user } = useContext(Context);
+  // const [setTitle]=useState
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
@@ -25,6 +29,7 @@ export default function SinglePost() {
     getPost();
   }, [path]);
 
+//Deleting the post
   const handleDelete = async () => {
     try {
       await axios.delete(`/posts/${post._id}`, {
@@ -33,7 +38,8 @@ export default function SinglePost() {
       window.location.replace("/");
     } catch (err) {}
   };
-
+  
+//updating the post
   const handleUpdate = async () => {
     try {
       await axios.put(`/posts/${post._id}`, {
@@ -48,6 +54,7 @@ export default function SinglePost() {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
+        {/* post.photo src={PF+post.photo} */}
         {post.photo && (
           <img src={PF + post.photo} alt="" className="singlePostImg" />
         )}

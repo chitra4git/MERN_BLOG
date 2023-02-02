@@ -1,24 +1,6 @@
-// import './login.css'
-// import { Link } from "react-router-dom";
+//add contect
 
-
-// export default function Login() {
-//   return (
-//     <div className='login'>
-//         <span className='loginTitle'>Login</span>
-//         <form className="loginForm">
-//             <label>Email</label>
-//             <input type="text" className="loginInput" placeholder='Enter your email..'/>
-//             <label>Password</label>
-//             <input type="password" className="loginInput" placeholder='Enter your password..'/>
-//             <button className='loginButton'>Login</button>
-//         </form>
-//             <button className='loginRegisterButton'>
-//               <Link className="link" to="/register">Register</Link>
-//               </button>
-//     </div>
-//   )
-// }
+//ref link https://zetcode.com/javascript/axios/
 
 import axios from "axios";
 import { useContext, useRef } from "react";
@@ -30,9 +12,10 @@ export default function Login() {
   const userRef = useRef();
   const passwordRef = useRef();
   const {user, dispatch, isFetching } = useContext(Context);
-
+  // submit function
   const handleSubmit = async (e) => {
     e.preventDefault();
+    //axios.post, validate the username and password
     dispatch({ type: "LOGIN_START" });
     try {
       const res = await axios.post("/auth/login", {

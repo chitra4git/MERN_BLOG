@@ -1,3 +1,5 @@
+// ref link https://www.freecodecamp.org/news/state-management-with-react-hooks/
+
 import { createContext, useEffect, useReducer } from "react";
 import Reducer from "./Reducer";
 
@@ -8,7 +10,7 @@ const INITIAL_STATE = {
 };
 
 export const Context = createContext(INITIAL_STATE);
-
+// use dispatch method, see the link
 export const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, INITIAL_STATE);
 

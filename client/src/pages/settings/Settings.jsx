@@ -9,6 +9,7 @@ export default function Settings() {
   const [file, setFile] = useState(null);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
+  //const [setEmail] =useState()
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
 
@@ -31,6 +32,7 @@ export default function Settings() {
       const data = new FormData()
       //const filename=.now();
       const filename = Date.now() + file.name;
+      //data.append(file)
       data.append("name", filename);
       data.append("file", file);
       updatedUser.profilePic = filename;
