@@ -9,25 +9,25 @@ User can post new blog and edit the page and delete the page.
 
 Home page: 
 
-<img width="80" height="80" alt="Home" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/HomePage.jpg">
+<img width="500" height="500" alt="Home" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/HomePage.jpg">
 <br>
 <br>
 
 Blog page: 
 
-<img width="80" height="80" alt="Blog" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/BlogPost.jpg">
+<img width="500" height="500" alt="Blog" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/BlogPost.jpg">
 <br>
 <br>
 
 Register page: 
 
-<img width="80" height="80" alt="Register" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/RegisterPage.jpg">
+<img width="500" height="500" alt="Register" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/RegisterPage.jpg">
 <br>
 <br>
 
 Login page: 
 
-<img width="80" height="80" alt="Login" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/LogIn.jpg">
+<img width="500" height="500" alt="Login" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/LogIn.jpg">
 
 
 
