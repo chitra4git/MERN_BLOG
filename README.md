@@ -7,19 +7,27 @@ User can post new blog and edit the page and delete the page.
 
 # Page view
 
-![HomePage](../api/images/ReadMe/HomePage.jpg)
+Home page: 
+
+<img width="80" height="80" alt="Home" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/HomePage.jpg">
 <br>
 <br>
 
-![BlogPost](../api/images/ReadMe/BlogPost.jpg)
+Blog page: 
+
+<img width="80" height="80" alt="Blog" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/BlogPost.jpg">
 <br>
 <br>
 
-![Register](../api/images/ReadMe/RegisterPage.jpg)
+Register page: 
+
+<img width="80" height="80" alt="Register" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/RegisterPage.jpg">
 <br>
 <br>
 
-![LogIn](../api/images/ReadMe/LogIn.jpg)
+Login page: 
+
+<img width="80" height="80" alt="Login" src = "https://github.com/chitra4git/MERN_BLOG/blob/main/api/images/ReadMe/LogIn.jpg">
 
 
 
