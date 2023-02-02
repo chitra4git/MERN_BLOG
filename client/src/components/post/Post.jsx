@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 //import postImg from "../post/postImage.jpg"
 
 export default function Post({post}) {
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://main--soft-hummingbird-50681a.netlify.app/images/";
   return (
     <div className="post">
       {post.photo && (

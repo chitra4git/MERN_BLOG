@@ -12,7 +12,7 @@ export default function SinglePost() {
 
   //console.log(path)
   const [post, setPost] = useState({});
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://main--soft-hummingbird-50681a.netlify.app/images/";
   const { user } = useContext(Context);
   // const [setTitle]=useState
   const [title, setTitle] = useState("");
